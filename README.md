@@ -32,38 +32,7 @@ Rotina diária orientada a eventos:
 
 ## 📊 Diagrama da Infraestrutura
 
-```mermaid
-graph TD
-
-User((User))
-
-subgraph Frontend
-CloudFront[CloudFront CDN]
-S3Front[S3 Frontend Bucket]
-end
-
-subgraph Backend
-ALB[Application Load Balancer]
-ECS[ECS Fargate Container]
-ECR[ECR Docker Registry]
-end
-
-subgraph Automation
-EventBridge[EventBridge Cron]
-Lambda[AWS Lambda]
-S3Report[S3 Reports Bucket]
-end
-
-User --> CloudFront
-CloudFront --> S3Front
-
-User --> ALB
-ALB --> ECS
-ECS -.-> ECR
-
-EventBridge --> Lambda
-Lambda --> S3Report
-```
+<img width="882" height="622" alt="dreamsquad-coinflipdrawio" src="https://github.com/user-attachments/assets/300bf11d-c661-41fa-9d72-3a77f3f0878a" />
 
 ---
 
