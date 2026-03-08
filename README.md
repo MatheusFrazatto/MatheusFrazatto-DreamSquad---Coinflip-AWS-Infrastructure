@@ -23,7 +23,7 @@ API RESTful desenvolvida em **Python (Flask)** e conteinerizada com **Docker**.
 ### Serviço 3 — Automação  
 Rotina diária orientada a eventos:
 
-* O **EventBridge** executa um agendamento (cron) todos os dias às 10:00.
+* O **EventBridge** executa um agendamento (cron) todos os dias às 10:00 (13:00 UTC).
 * O evento dispara uma **AWS Lambda**.
 * A Lambda gera um relatório em formato `.txt`.
 * O arquivo gerado é salvo em um **Amazon S3**.
