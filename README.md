@@ -103,6 +103,9 @@ docker push <ECR_URL>:latest
 ```
 
 ### 3. Deploy do FrontEnd (S3)
+
+**🚨 Atenção: Antes de enviar os arquivos para o S3, você precisa apontar o frontend para o seu novo Load Balancer.**
+
 ```bash
 cd ../frontend
 aws s3 sync . s3://<BUCKET_FRONTEND>
