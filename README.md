@@ -2,6 +2,7 @@
 
 Bem-vindo ao repositório do projeto **CoinFlip**. Este projeto foi desenvolvido como resolução de desafio técnico, implementando uma arquitetura completa na AWS utilizando boas práticas de Infraestrutura como Código, Serverless e segurança de rede.
 
+-> Vídeo de explicação do teste técnico: https://youtu.be/51o0bLvsQZk
 ---
 
 ## 🏗️ Arquitetura do Projeto
