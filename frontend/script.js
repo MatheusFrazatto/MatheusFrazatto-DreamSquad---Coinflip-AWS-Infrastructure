@@ -6,7 +6,7 @@ document.getElementById('flipButton').addEventListener('click', async () => {
 
     try {
         /*Faz a requisição para a API do Serviço 2 */
-        const response = await fetch('http://coinflip-alb-388181438.us-east-1.elb.amazonaws.com/api/flip');
+        const response = await fetch('<Coloque a URL do Load Balancer aqui>');
 
         if (!response.ok) {
             throw new Error('Erro na comunicação com a API');
